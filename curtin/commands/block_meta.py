@@ -455,7 +455,7 @@ def get_path_to_storage_volume(volume, storage_config):
         # Get path to block device for disk. Device_id param should refer
         # to id of device in storage config
         volume_path = None
-        for disk_key in ['wwn', 'serial', 'device_id', 'path']:
+        for disk_key in ['serial', 'device_id', 'path']:
             vol_value = vol.get(disk_key)
             try:
                 if not vol_value:
